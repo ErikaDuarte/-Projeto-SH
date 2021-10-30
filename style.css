@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*HUB DE MENU*/
+#Menu ul{
+    list-style: none;
+    padding: 0;
+    background-color: rgb(37, 37, 39);
+}
+
+#Menu ul li{
+    display: inline;
+}
+
+#Menu  ul li a{
+    color:  #3391ff;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    transition: background .3s;
+    font-weight: bold;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+#Menu ul li a:hover{
+    background-color: whitesmoke;
+    transition: background .4s;
+    transform: scale(1.0) translateY(-2px);
+}
+
+nav ul li a.cadastro{
+    float: right;
+    display: flex;
+}
+
+nav ul li a.login{
+    float: right;
+    display: flex;
+}
+
+button.login{
+    cursor: pointer;
+    background: black;
+    color: white;
+    border: none;
+    padding: 5px 10px 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+button.login:hover{
+    background: white;
+    color: black;
+}
+
+/*SISTEMA DE BUSCA*/
+.search-box{
+position: absolute;
+transform: translate(-20%,-5%);
+background: black;
+border-radius: 50px;
+padding: 6px;
+/*top: 50%;
+left: 50%;*/
+}
+
+.search-box:hover >.search-txt{
+width: 240px;
+padding: 0 6px;
+font-weight: bold;
+font-family: 'Gemunu Libre', sans-serif;
+}
+
+.search-box:hover > .search-btn{
+background: white;
+}
+
+.search-btn{
+    float: right;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    background:#34495e;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    text-align: center;
+    outline: none;
+    padding: 0;
+    font-size: 15px;
+    color: white;
+    transition: 0.3s;
+    line-height: 20px;
+    width: 0;
+}
+
+body{
+    background-image: linear-gradient(86deg, rgb(66, 47, 168), rgb(247, 81, 81));
+    font-family: 'Gemunu Libre', sans-serif;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+li {
+    list-style: none;
+}
+
+/*LOGO*/ 
+header{
+    width: 100%;
+    height: 50px;
+    background: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 0 3px ;
+}
+
+div a.btnd{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 2px 10px;
+    background: dodgerblue;
+    font-weight: bold;
+    font-family: 'Gemunu Libre', sans-serif;
+    float: right;
+    border-radius: 20px;
+}
+
+div a.btnd:active{
+    background: black;
+}
+
+/*POSTAGEM USUARIO PRINCIAL*/
+.main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+div.NewPost{
+    width: 100%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 50px 0;
+    padding: 25px;
+    background: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 1px 0 3px rgba(0,0,0,0.2);
+}
+
+div.NewPost div.InfoUser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.NewPost div.InfoUser div.ImgUser{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #333;
+}
+
+div.NewPost div.InfoUser a.pf{
+    font-size: 16px;
+    margin-left: 10px;
+    color: #23A0FF;
+    text-decoration: none;
+}
+
+div.NewPost Form.Formulario{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+div.NewPost form.Formulario textarea{
+    height: 90px;
+    background: rgb(212, 211, 211);
+    color: black;
+    margin: 15px 0; 
+    padding: 25px;
+    border-radius: 10px;
+    resize: none;
+    border: 0;
+    outline: none;
+    font-weight: bold;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+div.NewPost form.Formulario ::placeholder{
+    color: black;
+}
+
+div.NewPost form.Formulario  div.IcconsANDButton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.NewPost form.Formulario  div.IcconsANDButton div.icon button{
+    outline: none;
+    background: yellow;
+    margin-right: 10px;
+    border: 0;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+div.NewPost div.Formulario div.IcconsANDButton div.Icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+}
+
+button.btnSubmittForm{
+    background: #25c517;
+    padding: 10px 50px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    transition: background 0.2s;
+}
+
+button.btnSubmittForm:hover{
+    background: #23A0FF;
+}
+
+div.NewPost form.Formulario  div.IcconsANDButton div.icon button:hover{
+    background: white;
+    transform: scale(1.2) translateY(+10px);
+}
+
+/*POSTAGENS DE OUTROS USUARIOS*/
+ul.posts li.post{
+    width: 100%;
+    margin-bottom: 50px;
+    background: whitesmoke;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 1px 0 3px rgba(0,0,0,0.5);
+}
+
+ul.posts li.post div.InforUserPost{
+    display: flex;
+    align-items: center;
+
+}
+
+ul.posts li.post div.InforUserPost div.NameAndHour{
+    margin-left: 10px;
+}
+
+ul.posts li.post div.InforUserPost div.ImgUserPost{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: blueviolet;
+}
+
+ul.posts li.post div.InforUserPost div.NameAndHour >strong{
+    color: #23A0FF;
+}
+
+ul.posts li.post div.InforUserPost div.NameAndHour >p{
+    color: royalblue;
+    font-size: 13px;
+}
+
+ul.posts li.post >p{
+    width: 100%;
+    height: 20px 0;
+    font-weight: bold;
+    color: black;
+}
+
+ul.posts li.post div.buttonaction{
+    display: flex;
+    align-items: center;
+}
+
+ul.posts li.post div.buttonaction button.action{
+    padding: 5px 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.2s;
+}
+
+ul.posts li.post div.buttonaction button.action img{
+    margin-right: 5px;
+}
+
+ul.posts li.post div.buttonaction button.action:hover{
+    color: white;
+}
+
+.like{
+    background: red;
+}
+
+.like:hover{
+    background: black;
+    transform: scale(1.2) translateY(+10px);
+}
+
+.comment{
+    background: #25c517;
+}
+
+.comment:hover{
+    background: black;
+    transform: scale(1.2) translateY(+10px);
+}
+
+.share{
+    background: blue;
+}
+
+.share:hover{
+    background: black;
+    transform: scale(1.2) translateY(+10px);
+}
+
+/* @MEDIA */
+@media only screen and (width: 768px){
+    header img.LG{
+        width: 110px;
+    }
+}
+@media only screen and (width: 425px){
+    header img.LG{
+        width: 110px;
+    }
+}
+@media only screen and (width: 375px){
+    header img.LG{
+        width: 110px;
+    }
+}
+@media only screen and (width: 320px){
+    header img.LG{
+        width: 110px;
+    }    
+    #Menu ul li a {
+        font-size: 15px;
+        font-family: 'Gemunu Libre', sans-serif;
+    }
+    div a.btnd{
+        font-size: 15px;
+    }
+    ul.posts li.post div.buttonaction button.action{
+        padding: 5px 10px;
+        margin-right: 10px;
+    }
+}
